@@ -10,12 +10,22 @@
   list-style: none;
   padding-left: 0;
   margin: -1rem 0;
+  @include for-tablet-landscape-up {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   & > li {
     margin: 4em 0;
+    @include for-tablet-landscape-up {
+      flex-basis: 33.3%;
+    }
 
     &:first-child {
       margin-top: 0;
+      @include for-tablet-landscape-up {
+        margin-top: 4em;
+      }
     }
 
     &:last-child {

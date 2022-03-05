@@ -19,6 +19,10 @@
     margin: 0.8em;
   }
 
+  & > li.metadataCategories {
+    margin: 1.2em 0.8em;
+  }
+
   p {
     margin: 0;
   }
@@ -54,6 +58,20 @@
 }
 
 .metadataCategories {
+  position: absolute;
+  top: 0;
+  margin: 1.2em 0.8em;
+  padding: 1em 5em 5em 1em;
+  overflow: hidden;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-color: red;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
   li {
     display: inline-block;
 

@@ -19,6 +19,16 @@ export const POST_FIELDS = gql`
     postId
     slug
     title
+    featuredImage {
+      node {
+        altText
+        caption
+        sourceUrl
+        srcSet
+        sizes
+        id
+      }
+    }
   }
 `;
 
@@ -143,6 +153,7 @@ export const QUERY_POST_BY_SLUG = gql`
       title
       slug
       isSticky
+      recipemeta
     }
   }
 `;

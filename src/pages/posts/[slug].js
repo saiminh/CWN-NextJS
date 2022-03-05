@@ -25,6 +25,7 @@ export default function Post({ post, socialImage, related }) {
     metaTitle,
     description,
     content,
+    recipemeta,
     date,
     author,
     categories,
@@ -103,6 +104,12 @@ export default function Post({ post, socialImage, related }) {
               className={styles.content}
               dangerouslySetInnerHTML={{
                 __html: content,
+              }}
+            />
+            <div
+              className={styles.content}
+              dangerouslySetInnerHTML={{
+                __html: recipemeta,
               }}
             />
           </Container>
